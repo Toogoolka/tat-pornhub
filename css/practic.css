@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    justify-content: space-around;
+}
+
+div{
+    border-radius: 2px;
+    height: 85px;
+    width: 85px;
+
+    position: relative;
+}
+
+.red{
+    background: #f50b0b;
+    position: absolute;
+    z-index: 1;
+    left: 35px;
+
+    transition: height ease-in-out 0.5s, width ease-in-out 0.5s, left ease-in-out 0.5s, z-index ease-in-out 0.5s;;
+
+}
+.blue{
+    background: #2258a1;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    z-index: 2;
+    transition: height ease-in-out 0.5s, width ease-in-out 0.5s, left ease-in-out 0.5s, z-index ease-in-out 0.5s;
+}
+
+.yellow{
+    background: #f1db00;
+    position: absolute;
+    top: 65px;
+    left: 35px;
+    z-index: 3;
+
+    transition: height ease-in-out 0.5s, width ease-in-out 0.5s, left ease-in-out 0.5s, z-index ease-in-out 0.5s;
+}
+
+.red:hover, .yellow:hover, .blue:hover{
+    z-index: 4;
+    width: 90px;
+    height: 90px;
+
+    position: absolute;
+    left: 55px;
+}
