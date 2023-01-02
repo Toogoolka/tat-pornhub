@@ -102,7 +102,7 @@ strong.black{
 /*The adaptive design is starting here*/
 
 /*Adapt for 320px*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 375px){
     header{
         font-family: sans-serif;
         height: 40px;
