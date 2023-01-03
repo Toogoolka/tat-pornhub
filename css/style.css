@@ -1,69 +1,3 @@
-/*The adaptive design is starting here*/
-
-/*Adapt for 320px*/
-@media screen and (max-width: 375px){
-    header{
-        font-family: sans-serif;
-        height: 40px;
-    }
-
-    .menu{
-        visibility: hidden;
-    }
-
-    .logo{
-        width: 35px;
-        border-radius: 50%;
-    }
-    .logo-container{
-        display: inline;
-        align-items: center;
-    }
-    .span-container{
-        display: flex;
-        flex-direction: column;
-        padding-left: 10px;
-    }
-
-    .logo-text-sub{
-        margin-top: 3px;
-        text-align: center;
-        color: darkgrey;
-        float: right;
-    }
-    strong{
-        background: black;
-
-        padding: 3px 5px;
-    }
-    strong.orange{
-        background: orange;
-        color: black;
-    }
-    strong.black{
-        color: #ffffff;
-    }
-    .main{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .cards-head-text{
-        font-size: 20px;
-    }
-    .card{
-        width: 180px;
-        border-radius: 5px;
-        padding: 20px 20px 40px;
-        background: #eeeeee;
-
-        margin: 20px 10px;
-    }
-
-}
-
-
-
 /*Main styles*/
 header{
     font-family: sans-serif;
@@ -76,6 +10,7 @@ header{
 }
 
 .menu{
+    visibility: visible;
     display: flex;
     justify-content: space-between;
 }
@@ -155,7 +90,6 @@ strong.black{
     grid-template-columns: repeat(auto-fit, 250px);
     grid-template-rows: auto;
     justify-content: center;
-
 }
 .cards-head-text{
     text-align: center;
@@ -173,58 +107,63 @@ strong.black{
     margin: 20px 10px;
 }
 
+
 /*The adaptive design is starting here*/
 
-/*Adapt for 320px*/
+/*Adapt for 375px*/
 @media screen and (max-width: 375px){
-    header{
-        font-family: sans-serif;
-        height: 40px;
-    }
-
     .menu{
         visibility: hidden;
+        margin: 0px;
+        height: 0px;
+    }
+
+    header{
+        height: 50px;
+        display: inline;
+        font-family: sans-serif;
     }
 
     .logo{
-        width: 35px;
+        width: 40px;
         border-radius: 50%;
     }
     .logo-container{
-        display: inline;
+        display: flex;
+        justify-content: center;
         align-items: center;
+
+        padding-top: 10px;
     }
     .span-container{
         display: flex;
         flex-direction: column;
         padding-left: 10px;
+        font-size: 16px;
     }
-
     .logo-text-sub{
         margin-top: 3px;
         text-align: center;
         color: darkgrey;
         float: right;
-    }
-    strong{
-        background: black;
-
-        padding: 3px 5px;
-    }
-    strong.orange{
-        background: orange;
-        color: black;
-    }
-    strong.black{
-        color: #ffffff;
+        font-size: 12px;
     }
     .main{
         display: flex;
         flex-direction: column;
-
     }
+
+    .video-block{
+        margin-top: 20px;
+    }
+
     .cards-head-text{
-        font-size: 20px;
+        margin: 30px 10px 20px;
+        font-size: 16px;
+        color: darkgrey;
+        text-align: center;
+        width: fit-content;
+        border-bottom: 2px solid rgba(255, 165, 0, 0.35);
     }
     .card{
         width: 180px;
