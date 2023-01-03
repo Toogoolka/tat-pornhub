@@ -70,6 +70,7 @@ strong.black{
 .main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -78,7 +79,7 @@ strong.black{
     justify-content: center;
     align-items: center;
 
-    margin-top: 60px;
+    margin: 30px;
 }
 .video-zulfat{
     border-radius: 7px;
@@ -92,11 +93,12 @@ strong.black{
     justify-content: center;
 }
 .cards-head-text{
-    text-align: center;
     font-family: sans-serif;
     text-transform: uppercase;
+    color: darkgrey;
+    border-bottom: 2px solid rgba(255, 165, 0, 0.35);
 
-    margin-bottom: 40px;
+    margin: 30px;
 }
 .card{
     width: 180px;
