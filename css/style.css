@@ -76,6 +76,12 @@ strong.black{
 
 }
 
+.video-zulfat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .cards{
     display: grid;
     grid-template-columns: repeat(auto-fit, 200px);
